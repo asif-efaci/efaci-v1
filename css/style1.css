@@ -1,0 +1,475 @@
+
+.scanfcode2
+{
+  background-color:transparent;
+  border:2px;
+  padding:10px 0px;
+  color:#FF3E41;
+  position:relative;
+  margin:8px 0px;
+  position:relative;
+  text-transform:uppercase;
+  
+}
+.scanfcode2:before,
+.scanfcode2:after
+{
+  position:absolute;
+  border-color: whitesmoke;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content:"";
+  height: 45px;
+  position: absolute;
+  width: 40px;
+}
+.scanfcode2:before
+{
+  border-left-width:2px;
+  left:-6px;
+  top:6px;
+}
+.scanfcode2:after
+{
+  border-right-width:2px;
+  right:-6px;
+  top:6px;
+}
+.scanfcode2:hover:before,
+.scanfcode2:hover:after
+{
+  border-top-width:2px;
+  border-left-width:0px;
+  border-bottom-width:2px;
+  border-right-width:0;
+  border-color:#FF3E41;
+  top:-3px;
+  bottom:-3px;
+  width:100%;
+  height:100%;
+}
+
+
+
+.line-1 {
+  height: 1px;
+  background: Red;
+  width: 40%;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-5,
+  .col-md-6,
+  .col-md-7 {
+    float: left;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after {
+  display: table;
+  content: " ";
+}
+.container:after,
+.row:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after {
+  clear: both;
+}
+/*! CSS Used from: https://www.trafquest.com/css/animate.css */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+/*! CSS Used from: https://www.trafquest.com/css/style.css */
+/*body {
+  font-family: "Montserrat";
+  font-weight: normal;
+}*/
+.clear {
+  clear: both;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+.section-tb-cover {
+  width: 100%;
+}
+.section-tb-cover .section-table {
+  display: table;
+  width: 100%;
+  min-height: 750px;
+}
+.section-tb-cover .section-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.container-full {
+  width: 100%;
+  max-width: 1440px;
+/*  margin-top: 75px;*/
+}
+.pro-nav-cell {
+  position: relative;
+  width: 330px;
+  vertical-align: top !important;
+}
+/*.project-tb-nav {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 65px 30px 20px 35px;
+  background-image: url(img/homebg.png);
+  background-position: center;
+  background-size: 100%;
+  z-index: 1;
+}*/
+.project-tb-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.project-tb-nav ul li {
+  margin: 0 0 15px 0;
+}
+.project-tb-nav ul li a {
+  position: relative;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px;
+  border-bottom: solid 1px #012e5f;
+  text-decoration: none;
+}
+.project-tb-nav ul li a:hover,
+.project-tb-nav ul li.active a {
+  background-color: #FF3E41;
+}
+.project-tb-nav ul li a:before,
+.project-tb-nav ul li a:after {
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -ms-transition: 0.25s;
+  transition: 0.25s;
+}
+.project-tb-nav ul li a:hover:before,
+.project-tb-nav ul li.active a:before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  background-color: #FF3E41;
+}
+.project-tb-nav ul li a:hover:after,
+.project-tb-nav ul li.active a:after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: solid 10px #FF3E41;
+  border-top: solid 0px transparent;
+  border-bottom: solid 10px transparent;
+}
+.service-tab-content {
+  width: 70%;
+  float: left;
+  padding: 50px;
+}
+.service-tab-content h1 {
+/*  font-family: "Montserrat";*/
+  font-size: 30px;
+  padding: 0 0 33px 0;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 0 0 25px 0;
+  background: url(https://www.trafquest.com/images/underline.jpg) left bottom
+    no-repeat;
+  color: #000;
+}
+.service-tab-content .row {
+  margin: 0;
+}
+.service-project-bg {
+  width: 28%;
+  padding: 50px 0;
+  position: relative;
+  float: left;
+}
+.service-project-bg h2 {
+  font-family: "Montserrat";
+  font-size: 20px;
+  padding: 0 0 0 0;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 0;
+  color: #000;
+}
+.service-project-bg h3 {
+  font-family: "Montserrat";
+  font-size: 16px;
+  position: absolute;
+  text-transform: uppercase;
+  right: 0;
+  top: 50px;
+  font-weight: 100;
+  margin: 0;
+  color: #d7730f;
+}
+.service-project-bg h3 a {
+  color: #d7730f;
+  text-decoration: none;
+}
+.service-project-bg h3 a:hover {
+  color: #012e5f;
+}
+.service-tab-content h3 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+.service-tab-content p {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 28px;
+  text-align: justify;
+}
+.service-tab-content p img {
+  float: left;
+  max-width: 100%;
+  margin: 10px;
+}
+.service-tab-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+.service-tab-content ul li {
+  position: relative;
+  padding: 0 0 0 30px;
+  font-size: 16px;
+  font-weight: 100;
+  margin: 0 0 10px 0;
+}
+.service-tab-content ul li:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  width: 14px;
+  left: 10px;
+  height: 13px;
+  margin: 0px 0 0 -10px;
+  background: url(https://www.trafquest.com/images/bullet.png) no-repeat left
+    center;
+}
+.service-project-img {
+  width: 100%;
+  margin-top: 20px;
+}
+.service-project-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+@media (max-width: 1199px) {
+  .pro-nav-cell {
+    width: 275px;
+  }
+  .project-tb-nav {
+    padding: 35px 10px 20px 15px;
+  }
+  .project-tb-nav ul li a:hover::before,
+  .project-tb-nav ul li.active a::before {
+    width: 20px;
+  }
+  .project-tb-nav ul li a:hover::after,
+  .project-tb-nav ul li.active a::after {
+    right: -20px;
+  }
+}
+
+  .contact-form h3 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+  }
+  
+  .service-project-bg {
+    display: none;
+  }
+  .service-tab-content {
+    width: 100%;
+  }
+}
+
+  
+  .service-tab-content {
+    padding: 30px 20px 20px;
+  }
+  .service-tab-content h1 {
+    font-size: 22px;
+    padding: 0 0 15px 0;
+    margin: 0 0 10px 0;
+  }
+  .service-tab-content h3 {
+    font-size: 18px;
+    margin: 0 0 15px 0;
+  }
+}
+@media (max-width: 650px) {
+  .pro-nav-cell {
+    width: 100%;
+  }
+  .section-tb-cover .section-cell {
+    display: block;
+  }
+  .project-tb-nav {
+    position: relative;
+  }
+  .project-tb-nav {
+    padding: 25px 15px 20px;
+  }
+  .project-tb-nav ul li a:before,
+  .project-tb-nav ul li a:after {
+    display: none;
+  }
+}
+
+
+/*! CSS Used keyframes */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://www.trafquest.com/fonts/Montserrat-Regular.eot");
+  src: url("https://www.trafquest.com/fonts/Montserrat-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.trafquest.com/fonts/Montserrat-Regular.woff2")
+      format("woff2"),
+    url("https://www.trafquest.com/fonts/Montserrat-Regular.woff")
+      format("woff"),
+    url("https://www.trafquest.com/fonts/Montserrat-Regular.ttf")
+      format("truetype"),
+    url("https://www.trafquest.com/fonts/Montserrat-Regular.svg#Montserrat-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://www.trafquest.com/fonts/Montserrat-Light.eot");
+  src: url("https://www.trafquest.com/fonts/Montserrat-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.trafquest.com/fonts/Montserrat-Light.woff2")
+      format("woff2"),
+    url("https://www.trafquest.com/fonts/Montserrat-Light.woff") format("woff"),
+    url("https://www.trafquest.com/fonts/Montserrat-Light.ttf")
+      format("truetype"),
+    url("https://www.trafquest.com/fonts/Montserrat-Light.svg#Montserrat-Light")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://www.trafquest.com/fonts/Montserrat-Bold.eot");
+  src: url("https://www.trafquest.com/fonts/Montserrat-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.trafquest.com/fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("https://www.trafquest.com/fonts/Montserrat-Bold.woff") format("woff"),
+    url("https://www.trafquest.com/fonts/Montserrat-Bold.ttf")
+      format("truetype"),
+    url("https://www.trafquest.com/fonts/Montserrat-Bold.svg#Montserrat-Bold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
